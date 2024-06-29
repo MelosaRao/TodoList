@@ -1,0 +1,170 @@
+body{
+    margin:0;
+    padding:0;
+    display: grid;
+    grid-template-columns: auto 5fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.errorMessages {
+    color: red;
+    margin-top: 5px;
+    font-size: small;
+}
+.task{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto auto;
+    margin: 20px;
+    gap:10px;
+    background-color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    align-items: center;
+}
+#header{
+    grid-column: 1/3;
+    text-align: center;
+    background-color: dimgray;
+    font-size: 36px;
+    color: white;
+    font-weight: 800;
+}
+
+#list{
+    background-color: #c4cfec;
+}
+
+body>*{
+    padding: 10px;
+}
+
+#todo form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+form > *{
+    padding: 2px 2px;
+    margin: 10px 5px;
+}
+
+#todo form label, #project form label{
+    text-align: right;
+}
+
+#todo{
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: right;
+    padding-top: 0px;
+    padding-right: 0px;
+    
+}
+
+#todo>form>div{
+    text-align: left;
+}
+
+#sidebar{
+    padding: 0 0 0 0;
+    font-size: 24px;
+    color: white;
+    min-width: 200px;
+    text-align: center;
+}
+#sidebar>div{
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    align-items: center;
+}
+
+
+
+#sidebar>div>div:nth-child(odd){
+    background-color: rgb(109, 108, 108) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#sidebar>div>div:nth-child(even){
+    color: black;
+}
+
+#sidebar>div>div:nth-child(even):hover{
+    color: red;
+}
+
+#sidebar>div>div:nth-child(odd):hover{
+    background-color: rgb(8, 253, 172);
+    cursor: pointer;
+}
+
+
+
+button{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.2em;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+#newproject{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#currentproject{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#confirm,#confirm_project{
+    background-color: rgb(4, 148, 35);
+}
+
+#close,#close_project{
+    background-color: #f13709;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+
+.low{
+    border:1px solid yellow;
+}
+
+.medium{
+    border:1px solid orange;
+}
+
+.high{
+    border:1px solid red;
+}
+
+#project{
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: right;
+    padding-top: 0px;
+    padding-right: 0px;
+}
+
+.done{
+    background-color: rgb(174, 235, 174);
+    border: solid 1px green;
+    text-decoration: line-through;
+}
