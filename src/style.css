@@ -130,7 +130,7 @@ button:hover{
     font-size: 1.5em;
 }
 
-#confirm,#confirm_project{
+#confirm,#confirm_project,.save{
     background-color: rgb(4, 148, 35);
 }
 
@@ -167,4 +167,18 @@ button:hover{
     background-color: rgb(174, 235, 174);
     border: solid 1px green;
     text-decoration: line-through;
+}
+
+.save{
+    margin: 10px;
+}
+
+.removetodo:hover{
+    color: #f13709;
+    cursor: pointer;
+}
+
+.edit:hover{
+    color:green;
+    cursor: pointer;
 }

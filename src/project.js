@@ -1,3 +1,6 @@
+
+
+
 export class Project{
     //static no_todo = 0;
     //static incrementno_todo(){
@@ -6,9 +9,10 @@ export class Project{
     constructor(name){
         this.name = name;
         this.projectlist = [];
+        this.isDefault = false
     }
 
-    addToList(todo){
+    /*addToList(todo){
         this.projectlist.push(todo);
         //todo.id = Project.no_todo;
         //Project.incrementno_todo();
@@ -16,7 +20,7 @@ export class Project{
 
     deleteFromList(todo){
         this.projectlist.splice(this.projectlist.findIndex((element)=>element===todo),1);
-    }
+    }*/
 }
 
 export class todo{
@@ -29,7 +33,7 @@ export class todo{
         //this.id = 0;
     }
 
-    setTitle(title){
+    /*setTitle(title){
         this.title = title
     }
 
@@ -53,6 +57,6 @@ export class todo{
 
     getDone(){
         return this.done;
-    }
+    }*/
 
 }

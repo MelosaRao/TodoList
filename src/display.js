@@ -27,7 +27,7 @@ function displaynewTask(content, todo,project){
         content.removeChild(deletebtn.parentNode);
         console.log(project);
         console.log(todo)
-        project.deleteFromList(todo)
+        project.projectlist.splice(project.projectlist.findIndex((element)=>element===todo),1)
 
         console.log(project)
     })
@@ -55,6 +55,7 @@ function displaynewTask(content, todo,project){
         closediv.removeChild(close)
         
         const savebtn = document.createElement('button')
+        savebtn.classList.add()
         savebtn.innerText = 'save'
         todoDialog.appendChild(savebtn)
         todoDialog.showModal();
